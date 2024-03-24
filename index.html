@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanila weather app</title>
+    <link rel="stylesheet" href="src/index.css" />
 </head>
 <body>
+    <div class="container">
     <header>
         <form>
-            <input type="search" placeholder="Enter a city.."/>
-            <input type="submit" value="Search" />
+            <input type="search" placeholder="Enter a city.." class="enter-city"/>
+            <input type="submit" value="Search" class="search-button" />
         </form>
     </header>
     <main>
-        <h1> Paris</h1>
-        <p>
+        <h1 class="city"> Paris</h1>
+        <p class="weather-forcast">
         <div>
             saturday 14:55 , boken clouds
         </div>
         <div>
             humodity:<strong> 60%</strong>, wind:<strong>9.77 Km/h</strong>
         </div>
-        <span>emoji</span><span> 11</span><span> °c</span>
+        <span class="weather-icon">emoji</span><span class="weather-number"> 11</span><span clas="weather-unit"> °c</span>
         </p>
     </main>
     <footer>
@@ -31,6 +33,7 @@
         <a href="https://my-weather-vanilla-app.netlify.app">hosted on Netlify</a>
 
     </footer>
+</div>
     
 </body>
 </html>
