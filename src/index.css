@@ -1,5 +1,6 @@
 body{
     background-color:#f9f7fe;
+    font-family: "Roboto Slab", serif;
     
 
 }
@@ -58,6 +59,7 @@ strong{
     font-size:88px;
     margin-left:200px;
     font-weight:bold;
+    line-height:88px;
 }
 .weather-icon{
     font-size:44px;
@@ -65,15 +67,17 @@ strong{
 
 }
 .weather-unit{
-    margin: top 16px;
+    margin-top:8px;
     font-size:28px;
+    display:flex;
 }
 footer{
     border-top:1 px solid ;
     padding:30px 600;
-    text-align:senter;
+    text-align:center;
     font-size:14px;
     color:rgba(0,0,0,0.5);
+    font-family: "Roboto Slab", serif;
 
 
 }
