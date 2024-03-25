@@ -6,7 +6,7 @@ function weatherApp(response){
     let humidityElement=document.querySelector("humidity-js");
     let windspeedElement=document.querySelector("wind-js");
     let timeElement=document.querySelector("time-js");
-    let date=new Date(resonse.data.time*1000);
+    let date=new Date(response.data.time*1000);
     let iconElement=document.querySelector("weather-icon-js");
 
     cityElement.innerHTML=response.data.city;
