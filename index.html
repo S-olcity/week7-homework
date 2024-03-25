@@ -8,28 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
 </head>
 <body>
     <div class="container">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city ..."  required class="enter-city"/>
+        <form id="form-js">
+            <input type="search" placeholder="Enter a city "  required class="enter-city"/>
             <input type="submit" value="Search" class="search-button" />
         </form>
     </header>
     <main>
-        <h1 class="city"> Paris</h1>
+        <h1 class="city" id="city-js"> Paris</h1>
         <p class="weather-forcast">
         <div>
-            saturday 14:55 , boken clouds
+            <span id="time-js">saturday 14:55 </span>,<span id="description-js"> boken clouds</span>
         </div>
         <div>
-            humdity:<strong> 60%</strong>, wind:<strong>9.77 Km/h</strong>
+            humdity:<strong id="humidity-js"> 60%</strong>, wind:<strong id="wind-js">9.77 Km/h</strong>
         </div>
         <div class="weather-forcast-container">
-        <div class="weather-icon">e</div>
-        <div class="weather-number"> 11</div>
-        <div clas="weather-unit"> °c</div>
+        <div class="weather-icon"  id="weather-icon-js"></div>
+        <div class="weather-number" id="weather-number-js"> 11</div>
+        <div clas="weather-unit" id="weather-unit-js"> °c</div>
         </div>
         </p>
     </main>
